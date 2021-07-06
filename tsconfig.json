@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "preserveConstEnums": true
+    },
+    "include": ["index.ts", "src/ts/**/*"]
+}

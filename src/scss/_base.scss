@@ -1,0 +1,19 @@
+@use 'fonts';
+@mixin fullsize() {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+@mixin center($both) {
+    display: center;
+}
+
+:root {
+    font-family: "Montserrat";
+    @include fullsize();
+}
+
+body {
+    @include fullsize();
+}

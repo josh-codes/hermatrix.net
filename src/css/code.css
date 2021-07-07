@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Italic.ttf");
+  font-style: italic;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-BoldItalic.ttf");
+  font-style: italic;
+  font-weight: 700;
+}
+:root {
+  font-family: "Montserrat";
+  background: #0B0E11;
+  color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 75px;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.hidden {
+  width: 0px;
+  height: 0px;
+}
+
+content {
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+}
+
+returnbutton {
+  transition: all 0.2s;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  background: #151A21;
+  border-radius: 25%;
+  position: absolute;
+}
+returnbutton svg {
+  width: 32px;
+  height: 32px;
+}
+returnbutton:hover {
+  background: #242C37;
+}
+returnbutton:active {
+  background: #323D4D;
+}
+
+header {
+  z-index: 99;
+}
+
+content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+inputwrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+input {
+  transition: all 0.2s;
+  cursor: pointer;
+  overflow: hidden;
+  font-family: "Montserrat";
+  width: 500px;
+  height: 50px;
+  border-radius: 2.5%/25%;
+  background: #151A21;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: large;
+  color: #FFFFFF;
+}
+input:hover {
+  background: #242C37;
+}
+input:active {
+  background: #323D4D;
+}
+
+enterinput {
+  transition: all 0.2s;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #151A21;
+  border-radius: 25%;
+}
+enterinput svg {
+  width: 32px;
+  height: 32px;
+}
+enterinput:hover {
+  background: #242C37;
+}
+enterinput:active {
+  background: #323D4D;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=code.css.map */

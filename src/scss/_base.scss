@@ -1,19 +1,56 @@
 @use 'fonts';
+$gray1: #DEE3EA;
+$gray2: #B2BDCD;
+$gray3: #5D7290;
+$gray4: #4F617A;
+$gray5: #404F64;
+$gray6: #323D4D;
+$gray7: #242C37;
+$gray8: #151A21;
+$gray9: #0B0E11;
+$white: #FFFFFF;
 @mixin fullsize() {
     width: 100%;
     height: 100%;
     margin: 0;
 }
 
-@mixin center($both) {
-    display: center;
+@mixin center($both: true) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @if ($both) {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@mixin button() {
+    transition: all 0.2s;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 :root {
     font-family: "Montserrat";
+    background: $gray9;
+    color: $white;
     @include fullsize();
 }
 
 body {
     @include fullsize();
+}
+
+header {
+    @include center();
+    width: 100%;
+    height: 75px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.hidden {
+    width: 0px;
+    height: 0px;
 }

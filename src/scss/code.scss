@@ -1,0 +1,55 @@
+@use 'base';
+@use 'external';
+@use 'fonts';
+content {
+    @include base.center;
+}
+
+inputwrapper {
+    width: 100%;
+    @include base.center();
+}
+
+input {
+    @include base.button();
+    font-family: "Montserrat";
+    width: 500px;
+    height: 50px;
+    border-radius: 2.5%/25%;
+    background: base.$gray8;
+    &:hover {
+        background: base.$gray7;
+    }
+    &:active {
+        background: base.$gray6;
+    }
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: large;
+    color: base.$white;
+}
+
+enterinput {
+    @include base.button();
+    @include base.center();
+    width: 50px;
+    height: 50px;
+    background: base.$gray8;
+    border-radius: 25%;
+    svg {
+        width: 32px;
+        height: 32px;
+    }
+    &:hover {
+        background: base.$gray7;
+    }
+    &:active {
+        background: base.$gray6;
+    }
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}

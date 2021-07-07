@@ -1,0 +1,15 @@
+@use 'base';
+appitem {
+    padding-left: 10px;
+    background: base.$gray8;
+    width: 100%;
+    height: 50px;
+    &:hover {
+        background: base.$gray7;
+    }
+    &:active {
+        background: base.$gray6;
+    }
+    @include base.button();
+    @include base.center(false);
+}

@@ -6,8 +6,11 @@ var createWindow = function () {
         width: 800,
         height: 600
     });
-    window.loadFile('index.html');
+    window.loadFile('src/index.html');
 };
 electron_1.app.whenReady().then(function () {
     createWindow();
+});
+electron_1.app.on('window-all-closed', function () {
+    electron_1.app.quit();
 });

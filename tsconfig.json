@@ -1,6 +1,8 @@
 {
     "compilerOptions": {
-        "preserveConstEnums": true
+        "outDir": "./src/js/",
+        "preserveConstEnums": true,
+        "strict": true
     },
-    "include": ["index.ts", "src/ts/**/*"]
+    "include": ["src/ts/**/*"]
 }

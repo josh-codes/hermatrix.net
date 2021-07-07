@@ -2,13 +2,19 @@
 
 <head>
     <title>Hermatrix.net Tools: Terminal</title>
-    <link rel="stylesheet" href="css/code.css">
+    <link rel="stylesheet" href="css/term.css">
     <script src="js/term.js"></script>
 </head>
 
 <body>
     <returnbutton><svg viewBox="0 0 24 24"><path fill="#404F64" ng-attr-d="{{icon.data}}" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path></svg></returnbutton>
-    <content></content>
+    <content>
+        <div id="consolehold"></div>
+        <inputwrapper>
+            <input placeholder="Enter a command" type="text">
+            <enterinput><svg viewBox="0 0 24 24"><path fill="#6F6F6F" ng-attr-d="{{icon.data}}" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path></svg></enterinput>
+        </inputwrapper>
+    </content>
 </body>
 
 </html>

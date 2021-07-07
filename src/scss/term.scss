@@ -1,2 +1,55 @@
 @use 'base';
 @use 'external';
+inputwrapper {
+    width: 100%;
+    @include base.center();
+    margin: 0;
+}
+
+input {
+    @include base.button();
+    font-family: "Montserrat";
+    width: calc(100% - 50px);
+    height: 50px;
+    border-radius: 2.5%/25%;
+    background: base.$gray8;
+    &:hover {
+        background: base.$gray7;
+    }
+    &:active {
+        background: base.$gray6;
+    }
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: large;
+    color: green;
+}
+
+enterinput {
+    @include base.button();
+    @include base.center();
+    width: 50px;
+    height: 50px;
+    background: base.$gray8;
+    border-radius: 25%;
+    svg {
+        width: 32px;
+        height: 32px;
+    }
+    &:hover {
+        background: base.$gray7;
+    }
+    &:active {
+        background: base.$gray6;
+    }
+}
+
+#consolehold {
+    overflow: scroll;
+    margin: 0;
+    width: 100%;
+    height: calc(100% - 50px);
+    display: grid;
+    align-items: flex-end;
+}

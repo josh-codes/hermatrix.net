@@ -93,4 +93,70 @@ header {
   z-index: 99;
 }
 
+inputwrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+}
+
+input {
+  transition: all 0.2s;
+  cursor: pointer;
+  overflow: hidden;
+  font-family: "Montserrat";
+  width: calc(100% - 50px);
+  height: 50px;
+  border-radius: 2.5%/25%;
+  background: #151A21;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: large;
+  color: green;
+}
+input:hover {
+  background: #242C37;
+}
+input:active {
+  background: #323D4D;
+}
+
+enterinput {
+  transition: all 0.2s;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #151A21;
+  border-radius: 25%;
+}
+enterinput svg {
+  width: 32px;
+  height: 32px;
+}
+enterinput:hover {
+  background: #242C37;
+}
+enterinput:active {
+  background: #323D4D;
+}
+
+#consolehold {
+  overflow: scroll;
+  margin: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  display: grid;
+  align-items: flex-end;
+}
+
 /*# sourceMappingURL=term.css.map */
